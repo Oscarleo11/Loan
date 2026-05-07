@@ -1,0 +1,145 @@
+{
+  "HomePage": {
+    "title": "Fast and secure loans for you and your business",
+    "description": "Get the financial boost you need with our flexible loan solutions for both individuals and businesses up to 3,000,000 DKK.",
+    "applyButton": "Apply now",
+    "learnMore": "Learn more",
+    "hero": {
+      "subtitle": "Financing for all needs",
+      "payout": "Payout within 24 hours"
+    },
+    "calculator": {
+      "title": "How much do you need?",
+      "amount": "Desired loan amount",
+      "monthly": "Estimated monthly fee from",
+      "disclaimer": "The monthly fee is individual and based on a credit assessment."
+    },
+    "benefits": {
+      "title": "Why choose Mylånbank?",
+      "item1": "Fast payout within 24 hours",
+      "item2": "No hidden fees or interest",
+      "item3": "Pay off the loan early and save money"
+    },
+    "process": {
+      "title": "How it works",
+      "step1": "Choose your loan amount",
+      "step2": "Get an answer within an hour",
+      "step3": "Money is paid out the same day"
+    },
+    "testimonials": {
+      "title": "We have helped thousands of customers",
+      "quote1": "It has worked really well. It is smooth and fast.",
+      "author1": "Mads, Master Carpenter",
+      "quote2": "Thanks to Mylånbank, we could realize our dreams faster.",
+      "author2": "Sara, Private Customer",
+      "quote3": "The most flexible loan experience I've had.",
+      "author3": "Jesper, IT Consultant"
+    },
+    "stats": {
+      "title": "Mylånbank in numbers",
+      "customers": "Active customers",
+      "payout": "Paid out in loans",
+      "rating": "Trustpilot score",
+      "speed": "Minutes response time"
+    }
+  },
+  "LoansPage": {
+    "title": "Flexible business financing",
+    "description": "Choose the solution that best fits your company's needs.",
+    "products": {
+      "businessLoan": {
+        "title": "Business Loan",
+        "desc": "A fixed loan for investment and growth."
+      },
+      "credit": {
+        "title": "Business Credit",
+        "desc": "Flexible access to capital when you need it."
+      },
+      "factoring": {
+        "title": "Factoring",
+        "desc": "Get your money immediately by selling your invoices."
+      }
+    }
+  },
+  "AboutPage": {
+    "title": "We challenge the traditional banking world",
+    "description": "Mylånbank was founded with the mission to help entrepreneurs grow.",
+    "history": "Since 2015, we have helped over 50,000 companies in Scandinavia gain access to fast and simple financing.",
+    "values": {
+      "title": "Our values",
+      "transparency": "Transparency",
+      "speed": "Speed",
+      "simplicity": "Simplicity"
+    }
+  },
+  "ContactPage": {
+    "title": "Contact us",
+    "description": "We are ready to help you every weekday.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send message"
+    },
+    "info": {
+      "phone": "Phone",
+      "hours": "Opening hours",
+      "support": "Weekdays 08:00 - 16:00"
+    }
+  },
+  "ApplyPage": {
+    "title": "Loan Application",
+    "type": {
+      "title": "What type of loan do you want?",
+      "private": "Private Loan",
+      "business": "Business Loan"
+    },
+    "steps": {
+      "type": "Loan Type",
+      "details": "Information",
+      "review": "Review"
+    },
+    "business": {
+      "title": "Tell us about your business",
+      "cvr": "CVR number",
+      "companyName": "Company name",
+      "purpose": "Purpose of the loan",
+      "purposePlaceholder": "e.g. investment, growth, inventory..."
+    },
+    "private": {
+      "title": "Tell us about your loan",
+      "cpr": "CPR number",
+      "purpose": "What will the loan be used for?",
+      "purposePlaceholder": "e.g. home improvement, travel, other..."
+    },
+    "personal": {
+      "title": "Your contact information",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email address",
+      "phone": "Phone number"
+    },
+    "review": {
+      "title": "Review your application",
+      "amount": "Desired amount",
+      "confirm": "Submit application",
+      "success": "Thank you for your application! We will get back to you within an hour."
+    },
+    "navigation": {
+      "next": "Next",
+      "back": "Back"
+    }
+  },
+  "Navigation": {
+    "home": "Home",
+    "loans": "Loans",
+    "about": "About us",
+    "contact": "Contact",
+    "footerDesc": "Your reliable partner for financial solutions in Denmark. We support entrepreneurs in building the future.",
+    "products": "Products",
+    "company": "Company",
+    "support": "Support",
+    "registered": "Mylånbank is registered with the Danish Financial Supervisory Authority.",
+    "rights": "All rights reserved."
+  }
+}
