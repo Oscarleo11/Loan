@@ -68,6 +68,18 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
+
+        <section className="py-20 lg:py-28 bg-gray-50">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-white p-10 lg:p-14 rounded-[3rem] shadow-2xl shadow-gray-200/40 border border-gray-100">
+              <div className="max-w-3xl mx-auto text-center">
+                <p className="text-sm uppercase tracking-[0.4em] text-green-600 font-black mb-4">{t('missionTitle')}</p>
+                <h2 className="text-4xl lg:text-5xl font-black text-gray-900 mb-6">{t('missionTitle')}</h2>
+                <p className="text-gray-500 text-lg leading-relaxed">{t('missionText')}</p>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <TestimonialCarousel />

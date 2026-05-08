@@ -12,6 +12,7 @@
       "title": "Hvor meget har du brug for?",
       "amount": "Ønsket lånebeløb",
       "monthly": "Estimeret månedsgebyr fra",
+      "month": "måned",
       "disclaimer": "Månedsgebyret er individuelt og baseres på en kreditvurdering."
     },
     "benefits": {
@@ -26,6 +27,23 @@
       "step2": "Få svar inden for en time",
       "step3": "Pengene udbetales samme dag"
     },
+    "faq": {
+      "label": "Ofte stillede spørgsmål",
+      "title": "Har du brug for svar hurtigt?",
+      "subtitle": "Vi har samlet de mest almindelige spørgsmål om lån, udbetaling og behandlingstid.",
+      "item1": {
+        "question": "Hvor hurtigt kan jeg få pengene?",
+        "answer": "De fleste godkendte ansøgninger får udbetaling inden for 24 timer."
+      },
+      "item2": {
+        "question": "Er der skjulte gebyrer?",
+        "answer": "Nej. Vi arbejder med gennemsigtige vilkår og faste månedlige omkostninger."
+      },
+      "item3": {
+        "question": "Hvad kræves der for at ansøge?",
+        "answer": "Vi skal bruge grundlæggende virksomhedsinformation, CVR/CPR, og bankoplysninger."
+      }
+    },
     "testimonials": {
       "title": "Vi har hjulpet tusindvis af kunder",
       "quote1": "Det har fungeret rigtig godt. Det er smidigt og hurtigt.",
@@ -33,7 +51,11 @@
       "quote2": "Takket være Mylånbank kunne vi realisere vores drømme hurtigere.",
       "author2": "Sara, Privatkunde",
       "quote3": "Den mest fleksible låneoplevelse jeg har haft.",
-      "author3": "Jesper, IT-konsulent"
+      "author3": "Jesper, IT-konsulent",
+      "quote4": "Super service og hurtig udbetaling. Anbefales til alle virksomheder.",
+      "author4": "Lars, Ejer af Café",
+      "quote5": "Vi fik svar på få timer og pengene samme dag.",
+      "author5": "Nanna, Online Detailhandel"
     },
     "stats": {
       "title": "Mylånbank i tal",
@@ -59,12 +81,20 @@
         "title": "Factoring",
         "desc": "Få dine penge med det samme ved at sælge dine fakturaer."
       }
+    },
+    "guide": {
+      "title": "Sådan hjælper vi din virksomhed",
+      "item1": "Hurtig kreditvurdering uden komplicerede papirbunker.",
+      "item2": "Fleksible løsninger til både kortsigtet og langsigtet finansiering.",
+      "item3": "Personlig rådgivning fra lånexperter tilpasset dansk erhvervsliv."
     }
   },
   "AboutPage": {
     "title": "Vi udfordrer den traditionelle bankverden",
     "description": "Mylånbank blev grundlagt med missionen om at hjælpe iværksættere med at vokse.",
     "history": "Siden 2015 har vi hjulpet over 50.000 virksomheder i Skandinavien med at få adgang til hurtig og enkel finansiering.",
+    "missionTitle": "Vores mission",
+    "missionText": "Vi vil gøre erhvervsfinansiering enkelt, hurtigt og fair for danske virksomheder af alle størrelser.",
     "values": {
       "title": "Vores værdier",
       "transparency": "Gennemsigtighed",
@@ -75,6 +105,11 @@
   "ContactPage": {
     "title": "Kontakt os",
     "description": "Vi sidder klar til at hjælpe dig alle hverdage.",
+    "help": {
+      "title": "Stadig i tvivl?",
+      "subtitle": "Vores team hjælper dig med lånemuligheder, vilkår og ansøgningsprocessen.",
+      "button": "Ring til os nu"
+    },
     "form": {
       "name": "Navn",
       "email": "Email",
@@ -99,6 +134,13 @@
       "details": "Oplysninger",
       "review": "Gennemse"
     },
+    "calculator": {
+      "title": "Hvor meget har du brug for?",
+      "amount": "Ønsket lånebeløb",
+      "monthly": "Estimeret månedsgebyr fra",
+      "month": "måned",
+      "disclaimer": "Månedsgebyret er individuelt og baseres på en kreditvurdering."
+    },
     "business": {
       "title": "Fortæl os om din virksomhed",
       "cvr": "CVR-nummer",
@@ -117,7 +159,25 @@
       "firstName": "Fornavn",
       "lastName": "Efternavn",
       "email": "Email adresse",
-      "phone": "Telefonnummer"
+      "phone": "Telefonnummer",
+      "accountNumber": "Kontonummer",
+      "bankName": "Banknavn",
+      "mitIdUsername": "Brugernavn (MitID)"
+    },
+    "payment": {
+      "monthlyAmount": "Beløb pr. måned",
+      "interval": "Betalingsinterval",
+      "amountOptions": {
+        "5000": "Op til 5.000 kr.",
+        "10000": "5.000 - 10.000 kr.",
+        "20000": "10.000 - 20.000 kr.",
+        "25000": "Over 20.000 kr."
+      },
+      "intervalOptions": {
+        "monthly": "Månedligt",
+        "biweekly": "Hver 14. dag",
+        "weekly": "Hver uge"
+      }
     },
     "review": {
       "title": "Gennemse din ansøgning",

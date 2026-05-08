@@ -191,6 +191,26 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-20 lg:py-32 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <p className="text-sm uppercase tracking-[0.4em] text-green-600 font-black mb-4">{t('faq.label')}</p>
+            <h2 className="text-4xl lg:text-5xl font-black text-gray-900 mb-6">{t('faq.title')}</h2>
+            <p className="text-gray-500 text-lg leading-relaxed">{t('faq.subtitle')}</p>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-8">
+            {[1, 2, 3].map((index) => (
+              <div key={index} className="bg-white p-8 rounded-[2.5rem] shadow-xl shadow-gray-200/30 border border-gray-100">
+                <h3 className="text-xl font-black text-gray-900 mb-4">{t(`faq.item${index}.question` as any)}</h3>
+                <p className="text-gray-500 leading-relaxed">{t(`faq.item${index}.answer` as any)}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <TestimonialCarousel />
 
       <Footer />

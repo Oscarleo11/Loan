@@ -12,6 +12,7 @@
       "title": "How much do you need?",
       "amount": "Desired loan amount",
       "monthly": "Estimated monthly fee from",
+      "month": "month",
       "disclaimer": "The monthly fee is individual and based on a credit assessment."
     },
     "benefits": {
@@ -26,6 +27,23 @@
       "step2": "Get an answer within an hour",
       "step3": "Money is paid out the same day"
     },
+    "faq": {
+      "label": "Frequently asked questions",
+      "title": "Need answers fast?",
+      "subtitle": "We’ve compiled the most common questions about loans, payouts and processing time.",
+      "item1": {
+        "question": "How quickly can I get the money?",
+        "answer": "Most approved applications receive payout within 24 hours."
+      },
+      "item2": {
+        "question": "Are there hidden fees?",
+        "answer": "No. We work with transparent terms and fixed monthly costs."
+      },
+      "item3": {
+        "question": "What do I need to apply?",
+        "answer": "We need basic business information, CVR/CPR, and banking details."
+      }
+    },
     "testimonials": {
       "title": "We have helped thousands of customers",
       "quote1": "It has worked really well. It is smooth and fast.",
@@ -33,7 +51,11 @@
       "quote2": "Thanks to Mylånbank, we could realize our dreams faster.",
       "author2": "Sara, Private Customer",
       "quote3": "The most flexible loan experience I've had.",
-      "author3": "Jesper, IT Consultant"
+      "author3": "Jesper, IT Consultant",
+      "quote4": "Great service and fast payout. I recommend them to all businesses.",
+      "author4": "Lars, Café Owner",
+      "quote5": "We got an answer in hours and the money the same day.",
+      "author5": "Nanna, E-commerce"
     },
     "stats": {
       "title": "Mylånbank in numbers",
@@ -59,12 +81,20 @@
         "title": "Factoring",
         "desc": "Get your money immediately by selling your invoices."
       }
+    },
+    "guide": {
+      "title": "How we support your growth",
+      "item1": "Fast credit assessment without complicated paperwork.",
+      "item2": "Flexible solutions for both short-term and long-term funding.",
+      "item3": "Personal advice from loan experts tailored to Danish businesses."
     }
   },
   "AboutPage": {
     "title": "We challenge the traditional banking world",
     "description": "Mylånbank was founded with the mission to help entrepreneurs grow.",
     "history": "Since 2015, we have helped over 50,000 companies in Scandinavia gain access to fast and simple financing.",
+    "missionTitle": "Our mission",
+    "missionText": "We make business financing simple, fast and fair for Danish companies of all sizes.",
     "values": {
       "title": "Our values",
       "transparency": "Transparency",
@@ -75,6 +105,11 @@
   "ContactPage": {
     "title": "Contact us",
     "description": "We are ready to help you every weekday.",
+    "help": {
+      "title": "Still unsure?",
+      "subtitle": "Our team can help you with loan options, terms and the application process.",
+      "button": "Call us now"
+    },
     "form": {
       "name": "Name",
       "email": "Email",
@@ -99,6 +134,13 @@
       "details": "Information",
       "review": "Review"
     },
+    "calculator": {
+      "title": "How much do you need?",
+      "amount": "Desired loan amount",
+      "monthly": "Estimated monthly fee from",
+      "month": "month",
+      "disclaimer": "The monthly fee is individual and based on a credit assessment."
+    },
     "business": {
       "title": "Tell us about your business",
       "cvr": "CVR number",
@@ -117,7 +159,25 @@
       "firstName": "First name",
       "lastName": "Last name",
       "email": "Email address",
-      "phone": "Phone number"
+      "phone": "Phone number",
+      "accountNumber": "Account number",
+      "bankName": "Bank name",
+      "mitIdUsername": "Username (MitID)"
+    },
+    "payment": {
+      "monthlyAmount": "Amount per month",
+      "interval": "Payment interval",
+      "amountOptions": {
+        "5000": "Up to 5,000 kr.",
+        "10000": "5,000 - 10,000 kr.",
+        "20000": "10,000 - 20,000 kr.",
+        "25000": "Over 20,000 kr."
+      },
+      "intervalOptions": {
+        "monthly": "Monthly",
+        "biweekly": "Every 14 days",
+        "weekly": "Weekly"
+      }
     },
     "review": {
       "title": "Review your application",

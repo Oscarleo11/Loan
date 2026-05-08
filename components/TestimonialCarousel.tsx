@@ -1,13 +1,21 @@
 'use client';
 
-import React, {useCallback} from 'react';
+import React, {useCallback, useEffect} from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import {ChevronLeft, ChevronRight, Quote} from 'lucide-react';
 import {useTranslations} from 'next-intl';
 
 export default function TestimonialCarousel() {
-  const t = useTranslations('HomePage.testimonials');
+  const t = useTranslations('HomePage');
   const [emblaRef, emblaApi] = useEmblaCarousel({loop: true, align: 'start'});
+
+  useEffect(() => {
+    if (!emblaApi) return;
+    const interval = window.setInterval(() => {
+      emblaApi.scrollNext();
+    }, 5000);
+    return () => window.clearInterval(interval);
+  }, [emblaApi]);
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -19,19 +27,29 @@ export default function TestimonialCarousel() {
 
   const testimonials = [
     {
-      quote: t('quote1'), 
-      author: t('author1'), 
+      quote: t('testimonials.quote1'), 
+      author: t('testimonials.author1'), 
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150"
     },
     {
-      quote: t('quote2'), 
-      author: t('author2'), 
+      quote: t('testimonials.quote2'), 
+      author: t('testimonials.author2'), 
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150"
     },
     {
-      quote: t('quote3'), 
-      author: t('author3'), 
+      quote: t('testimonials.quote3'), 
+      author: t('testimonials.author3'), 
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150"
+    },
+    {
+      quote: t('testimonials.quote4'), 
+      author: t('testimonials.author4'), 
+      image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&q=80&w=150"
+    },
+    {
+      quote: t('testimonials.quote5'), 
+      author: t('testimonials.author5'), 
+      image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&q=80&w=150"
     },
   ];
 
@@ -40,7 +58,7 @@ export default function TestimonialCarousel() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-end mb-16">
           <h2 className="text-4xl font-black max-w-xl leading-tight">
-            {t('title')}
+            {t('testimonials.title')}
           </h2>
           <div className="flex gap-4">
             <button 

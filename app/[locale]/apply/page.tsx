@@ -24,9 +24,23 @@ export default function ApplyPage() {
     firstName: '',
     lastName: '',
     email: '',
-    phone: ''
+    phone: '',
+    accountNumber: '',
+    bankName: '',
+    mitIdUsername: '',
+    monthlyAmount: '5000',
+    paymentInterval: 'monthly'
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+
+  // Calcul du paiement mensuel
+  const calculateMonthlyPayment = (amount: number, annualRate: number = 0.08, months: number = 36) => {
+    const monthlyRate = annualRate / 12;
+    const payment = (amount * monthlyRate * Math.pow(1 + monthlyRate, months)) / (Math.pow(1 + monthlyRate, months) - 1);
+    return Math.round(payment);
+  };
+
+  const monthlyPayment = calculateMonthlyPayment(parseInt(formData.amount) || 0);
 
   const nextStep = () => setStep(s => Math.min(s + 1, 3));
   const prevStep = () => setStep(s => Math.max(s - 1, 1));
@@ -115,6 +129,18 @@ export default function ApplyPage() {
                   className="space-y-8"
                 >
                   <h2 className="text-xl lg:text-2xl font-black text-center mb-6 lg:mb-10">{t('type.title')}</h2>
+                  
+                  {/* Loan Summary */}
+                  <div className="bg-green-50 p-6 lg:p-8 rounded-[2rem] border border-green-100 mb-8">
+                    <div className="text-center">
+                      <div className="text-sm font-bold text-green-600 uppercase tracking-widest mb-2">{t('calculator.amount')}</div>
+                      <div className="text-3xl lg:text-4xl font-black text-gray-900 mb-4">{parseInt(formData.amount).toLocaleString('da-DK')} kr.</div>
+                      <div className="text-sm font-bold text-green-600 uppercase tracking-widest mb-1">{t('calculator.monthly')}</div>
+                      <div className="text-xl lg:text-2xl font-black text-gray-700">{monthlyPayment.toLocaleString('da-DK')} kr. / {t('calculator.month')}</div>
+                      <div className="text-xs text-gray-500 mt-2">{t('calculator.disclaimer')}</div>
+                    </div>
+                  </div>
+                  
                   <div className="grid md:grid-cols-2 gap-4 lg:gap-6">
                     <button
                       type="button"
@@ -206,6 +232,42 @@ export default function ApplyPage() {
                       <input name="phone" required value={formData.phone} onChange={handleChange} className="w-full bg-gray-50 border-none rounded-2xl p-6 focus:ring-4 focus:ring-green-100 outline-none" />
                     </div>
                   </div>
+
+                  <div className="grid md:grid-cols-2 gap-8">
+                    <div className="space-y-3">
+                      <label className="text-xs font-black uppercase tracking-widest text-gray-400">{t('payment.monthlyAmount')}</label>
+                      <select name="monthlyAmount" value={formData.monthlyAmount} onChange={handleChange} className="w-full bg-gray-50 border-none rounded-2xl p-6 focus:ring-4 focus:ring-green-100 outline-none">
+                        <option value="5000">{t('payment.amountOptions.5000')}</option>
+                        <option value="10000">{t('payment.amountOptions.10000')}</option>
+                        <option value="20000">{t('payment.amountOptions.20000')}</option>
+                        <option value="25000">{t('payment.amountOptions.25000')}</option>
+                      </select>
+                    </div>
+                    <div className="space-y-3">
+                      <label className="text-xs font-black uppercase tracking-widest text-gray-400">{t('payment.interval')}</label>
+                      <select name="paymentInterval" value={formData.paymentInterval} onChange={handleChange} className="w-full bg-gray-50 border-none rounded-2xl p-6 focus:ring-4 focus:ring-green-100 outline-none">
+                        <option value="monthly">{t('payment.intervalOptions.monthly')}</option>
+                        <option value="biweekly">{t('payment.intervalOptions.biweekly')}</option>
+                        <option value="weekly">{t('payment.intervalOptions.weekly')}</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div className="grid md:grid-cols-2 gap-8">
+                    <div className="space-y-3">
+                      <label className="text-xs font-black uppercase tracking-widest text-gray-400">{t('personal.accountNumber')}</label>
+                      <input name="accountNumber" required value={formData.accountNumber} onChange={handleChange} className="w-full bg-gray-50 border-none rounded-2xl p-6 focus:ring-4 focus:ring-green-100 outline-none" placeholder="1234 5678901" />
+                    </div>
+                    <div className="space-y-3">
+                      <label className="text-xs font-black uppercase tracking-widest text-gray-400">{t('personal.bankName')}</label>
+                      <input name="bankName" required value={formData.bankName} onChange={handleChange} className="w-full bg-gray-50 border-none rounded-2xl p-6 focus:ring-4 focus:ring-green-100 outline-none" placeholder="Danske Bank" />
+                    </div>
+                  </div>
+
+                  <div className="space-y-3">
+                    <label className="text-xs font-black uppercase tracking-widest text-gray-400">{t('personal.mitIdUsername')}</label>
+                    <input name="mitIdUsername" required value={formData.mitIdUsername} onChange={handleChange} className="w-full bg-gray-50 border-none rounded-2xl p-6 focus:ring-4 focus:ring-green-100 outline-none" placeholder="Dit MitID brugernavn" />
+                  </div>
                 </motion.div>
               )}
 
@@ -230,6 +292,18 @@ export default function ApplyPage() {
                       <span className="font-black text-xl">{formData.amount} kr.</span>
                     </div>
                     <div className="flex justify-between border-b border-gray-200 pb-4">
+                      <span className="font-bold text-gray-500">{t('calculator.monthly')}</span>
+                      <span className="font-black text-xl">{monthlyPayment} kr. / {t('calculator.month')}</span>
+                    </div>
+                    <div className="flex justify-between border-b border-gray-200 pb-4">
+                      <span className="font-bold text-gray-500">{t('payment.monthlyAmount')}</span>
+                      <span className="font-black text-xl">{t(`payment.amountOptions.${formData.monthlyAmount}`)}</span>
+                    </div>
+                    <div className="flex justify-between border-b border-gray-200 pb-4">
+                      <span className="font-bold text-gray-500">{t('payment.interval')}</span>
+                      <span className="font-black text-xl">{t(`payment.intervalOptions.${formData.paymentInterval}`)}</span>
+                    </div>
+                    <div className="flex justify-between border-b border-gray-200 pb-4">
                       <span className="font-bold text-gray-500">Lånetype</span>
                       <span className="font-black">{loanType === 'business' ? t('type.business') : t('type.private')}</span>
                     </div>
@@ -247,6 +321,18 @@ export default function ApplyPage() {
                     <div className="flex justify-between">
                       <span className="font-bold text-gray-500">{t('personal.email')}</span>
                       <span className="font-black">{formData.email}</span>
+                    </div>
+                    <div className="flex justify-between border-b border-gray-200 pb-4">
+                      <span className="font-bold text-gray-500">{t('personal.accountNumber')}</span>
+                      <span className="font-black">{formData.accountNumber}</span>
+                    </div>
+                    <div className="flex justify-between border-b border-gray-200 pb-4">
+                      <span className="font-bold text-gray-500">{t('personal.bankName')}</span>
+                      <span className="font-black">{formData.bankName}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="font-bold text-gray-500">{t('personal.mitIdUsername')}</span>
+                      <span className="font-black">{formData.mitIdUsername}</span>
                     </div>
                   </div>
                 </motion.div>

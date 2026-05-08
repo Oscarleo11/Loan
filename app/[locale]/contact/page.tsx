@@ -22,6 +22,21 @@ export default function ContactPage() {
           <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-white to-transparent opacity-10" />
         </section>
 
+        <section className="py-12 lg:py-16 bg-green-50">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-white p-8 lg:p-12 rounded-[3rem] shadow-2xl shadow-green-100/40 border border-green-100 flex flex-col md:flex-row items-center gap-8">
+              <div className="flex-1">
+                <p className="text-sm uppercase tracking-[0.4em] text-green-600 font-black mb-4">{t('help.title')}</p>
+                <h2 className="text-3xl lg:text-4xl font-black text-gray-900 mb-4">{t('help.subtitle')}</h2>
+                <p className="text-gray-500 leading-relaxed">Vi er klar til at guide dig gennem lån, betaling og dokumentation.</p>
+              </div>
+              <a href="tel:+4589871006" className="inline-flex items-center justify-center rounded-3xl bg-green-600 text-white px-8 py-5 font-black text-base hover:bg-green-700 transition">
+                {t('help.button')}
+              </a>
+            </div>
+          </div>
+        </section>
+
         <section className="py-20 lg:py-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-12 lg:gap-16">
             {/* Contact Info */}

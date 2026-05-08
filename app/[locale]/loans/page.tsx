@@ -44,6 +44,23 @@ export default function LoansPage() {
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-green-500/10 rounded-full blur-[120px]" />
         </section>
 
+        <section className="py-20 lg:py-28 bg-green-50/70">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-3xl mx-auto mb-14">
+              <p className="text-sm uppercase tracking-[0.4em] text-green-600 font-black mb-4">{t('guide.title')}</p>
+              <h2 className="text-4xl lg:text-5xl font-black text-gray-900">{t('guide.title')}</h2>
+            </div>
+            <div className="grid md:grid-cols-3 gap-8">
+              {[1, 2, 3].map((index) => (
+                <div key={index} className="bg-white p-10 rounded-[2.5rem] shadow-xl shadow-gray-200/40 border border-gray-100">
+                  <div className="text-green-600 text-4xl font-black mb-6">0{index}</div>
+                  <p className="text-gray-500 leading-relaxed text-lg">{t(`guide.item${index}` as any)}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Products */}
         <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-12">
