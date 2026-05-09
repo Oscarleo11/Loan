@@ -24,9 +24,9 @@ export default function Footer() {
           <div>
             <h4 className="font-black text-lg mb-8 uppercase tracking-wider text-gray-500">{t('products')}</h4>
             <ul className="space-y-4 text-gray-400 font-medium">
-              <li><Link href="/loans" className="hover:text-green-400 transition">Erhvervslån</Link></li>
-              <li className="hover:text-green-400 transition cursor-pointer">Kassekredit</li>
-              <li className="hover:text-green-400 transition cursor-pointer">Factoring</li>
+              <li><Link href="/loans" className="hover:text-green-400 transition">{t('businessLoan')}</Link></li>
+              <li className="hover:text-green-400 transition cursor-pointer">{t('credit')}</li>
+              <li className="hover:text-green-400 transition cursor-pointer">{t('factoring')}</li>
             </ul>
           </div>
           
@@ -34,7 +34,7 @@ export default function Footer() {
             <h4 className="font-black text-lg mb-8 uppercase tracking-wider text-gray-500">{t('company')}</h4>
             <ul className="space-y-4 text-gray-400 font-medium">
               <li><Link href="/about" className="hover:text-green-400 transition">{t('about')}</Link></li>
-              <li className="hover:text-green-400 transition cursor-pointer">Karriere</li>
+              <li className="hover:text-green-400 transition cursor-pointer">{t('careers')}</li>
               <li><Link href="/contact" className="hover:text-green-400 transition">{t('contact')}</Link></li>
             </ul>
           </div>
@@ -42,9 +42,9 @@ export default function Footer() {
           <div>
             <h4 className="font-black text-lg mb-8 uppercase tracking-wider text-gray-500">{t('support')}</h4>
             <ul className="space-y-4 text-gray-400 font-medium">
-              <li className="hover:text-green-400 transition cursor-pointer">FAQ</li>
-              <li className="hover:text-green-400 transition cursor-pointer">Vilkår & Betingelser</li>
-              <li className="hover:text-green-400 transition cursor-pointer">Privatlivspolitik</li>
+              <li className="hover:text-green-400 transition cursor-pointer">{t('faq')}</li>
+              <li className="hover:text-green-400 transition cursor-pointer">{t('terms')}</li>
+              <li className="hover:text-green-400 transition cursor-pointer">{t('privacy')}</li>
             </ul>
           </div>
         </div>

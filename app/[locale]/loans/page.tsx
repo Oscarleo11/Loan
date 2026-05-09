@@ -81,7 +81,7 @@ export default function LoansPage() {
                     {t(`products.${prod.id}.desc` as any)}
                   </p>
                   <button className="flex items-center gap-2 font-black text-green-600 group-hover:gap-4 transition-all uppercase tracking-widest text-xs">
-                    Læs mere <ArrowRight className="w-5 h-5" />
+                    {t(`products.${prod.id}.readMore` as any)} <ArrowRight className="w-5 h-5" />
                   </button>
                 </div>
               </div>

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { useSearchParams } from 'next/navigation';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -10,6 +10,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 export default function ApplyPage() {
   const t = useTranslations('ApplyPage');
+  const locale = useLocale();
   const searchParams = useSearchParams();
   const initialAmount = searchParams.get('amount') || '50000';
 
@@ -32,6 +33,8 @@ export default function ApplyPage() {
     paymentInterval: 'monthly'
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   // Calcul du paiement mensuel
   const calculateMonthlyPayment = (amount: number, annualRate: number = 0.08, months: number = 36) => {
@@ -51,18 +54,53 @@ export default function ApplyPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsLoading(true);
+    setError(null);
+    
     try {
-      const response = await fetch('/api/apply', {
+      const loanTypeLabel = loanType === 'business' ? 'Erhvervslån' : 'Privatlån';
+      const payload = { 
+        ...formData, 
+        loanType: loanTypeLabel,
+        _subject: `Ny låneansøgning (${loanTypeLabel}) fra ${formData.firstName} ${formData.lastName}`,
+        _template: 'table',
+        _captcha: 'false'
+      };
+      
+      console.log('Envoi des données vers FormSubmit:', payload);
+      
+      const response = await fetch('https://formsubmit.co/ajax/Lanpenge47@gmail.com', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...formData, loanType })
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(payload)
       });
+
+      console.log('Réponse status:', response.status);
+      
+      const responseText = await response.text();
+      console.log('Réponse texte:', responseText);
+      
+      let errorData;
+      try {
+        errorData = JSON.parse(responseText);
+      } catch {
+        errorData = { message: `Erreur serveur ${response.status}` };
+      }
 
       if (response.ok) {
         setIsSubmitted(true);
+      } else {
+        setError(errorData.message || 'Une erreur est survenue lors de l\'envoi');
+        console.error('Erreur serveur:', response.status, errorData);
       }
     } catch (error) {
+      setError('Erreur de connexion. Veuillez réessayer.');
       console.error('Erreur lors de l\'envoi:', error);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -79,10 +117,10 @@ export default function ApplyPage() {
             <CheckCircle2 className="w-24 h-24 text-green-500 mx-auto mb-8" />
             <h1 className="text-4xl font-black text-gray-900 mb-6">{t('review.success')}</h1>
             <button 
-              onClick={() => window.location.href = '/da'}
+              onClick={() => window.location.href = `/${locale}`}
               className="bg-green-500 text-white px-10 py-4 rounded-2xl font-black text-lg hover:bg-green-600 transition"
             >
-              Gå til forsiden
+              {t('review.backToHome')}
             </button>
           </motion.div>
         </div>
@@ -304,7 +342,7 @@ export default function ApplyPage() {
                       <span className="font-black text-xl">{t(`payment.intervalOptions.${formData.paymentInterval}`)}</span>
                     </div>
                     <div className="flex justify-between border-b border-gray-200 pb-4">
-                      <span className="font-bold text-gray-500">Lånetype</span>
+                      <span className="font-bold text-gray-500">{t('review.loanType')}</span>
                       <span className="font-black">{loanType === 'business' ? t('type.business') : t('type.private')}</span>
                     </div>
                     {loanType === 'business' ? (
@@ -339,6 +377,12 @@ export default function ApplyPage() {
               )}
             </AnimatePresence>
 
+            {error && (
+              <div className="mt-8 p-6 bg-red-50 border border-red-200 rounded-2xl">
+                <p className="text-red-700 font-black text-center">{error}</p>
+              </div>
+            )}
+
             <div className="mt-12 flex flex-col sm:flex-row justify-between gap-4">
               {step > 1 && (
                 <button
@@ -365,10 +409,20 @@ export default function ApplyPage() {
               {step === 3 && (
                 <button
                   type="submit"
-                  className="sm:ml-auto flex items-center justify-center gap-2 bg-green-500 text-white px-10 py-4 rounded-2xl font-black text-lg hover:bg-green-600 transition shadow-xl shadow-green-100 order-1 sm:order-2"
+                  disabled={isLoading}
+                  className="sm:ml-auto flex items-center justify-center gap-2 bg-green-500 text-white px-10 py-4 rounded-2xl font-black text-lg hover:bg-green-600 disabled:bg-gray-400 disabled:cursor-not-allowed transition shadow-xl shadow-green-100 order-1 sm:order-2"
                 >
-                  {t('review.confirm')}
-                  <CheckCircle2 className="w-5 h-5" />
+                  {isLoading ? (
+                    <>
+                      <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                      {t('review.sending')}
+                    </>
+                  ) : (
+                    <>
+                      {t('review.confirm')}
+                      <CheckCircle2 className="w-5 h-5" />
+                    </>
+                  )}
                 </button>
               )}
             </div>

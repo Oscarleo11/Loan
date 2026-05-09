@@ -91,7 +91,7 @@ export default function TestimonialCarousel() {
                     <img src={test.image} alt={test.author} className="w-14 h-14 rounded-full object-cover border-2 border-green-500" />
                     <div>
                       <p className="font-black text-lg">{test.author}</p>
-                      <p className="text-green-400 font-medium text-sm text-uppercase uppercase tracking-widest">Verificeret kunde</p>
+                      <p className="text-green-400 font-medium text-sm text-uppercase uppercase tracking-widest">{t('testimonials.verified')}</p>
                     </div>
                   </div>
                 </div>

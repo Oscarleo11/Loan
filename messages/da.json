@@ -6,7 +6,8 @@
     "learnMore": "Læs mere",
     "hero": {
       "subtitle": "Finansiering til alle behov",
-      "payout": "Udbetaling inden for 24 timer"
+      "payout": "Udbetaling inden for 24 timer",
+      "happyCustomers": "Over 50.000 glade kunder"
     },
     "calculator": {
       "title": "Hvor meget har du brug for?",
@@ -18,14 +19,18 @@
     "benefits": {
       "title": "Hvorfor vælge Mylånbank?",
       "item1": "Hurtig udbetaling inden for 24 timer",
+      "desc1": "Få svar med det samme og pengene udbetalt til din virksomhedskonto inden for 24 timer.",
       "item2": "Ingen skjulte gebyrer eller renter",
-      "item3": "Indfri lånet før tid og spar penge"
+      "desc2": "Gennemsigtige vilkår. Ingen renter, ingen skjulte gebyrer – kun et fast månedsgebyr.",
+      "item3": "Indfri lånet før tid og spar penge",
+      "desc3": "Betal lånet tilbage når du vil uden ekstra omkostninger. Du betaler kun for den tid, du bruger."
     },
     "process": {
       "title": "Sådan fungerer det",
       "step1": "Vælg dit lånebeløb",
       "step2": "Få svar inden for en time",
-      "step3": "Pengene udbetales samme dag"
+      "step3": "Pengene udbetales samme dag",
+      "desc": "Vores digitale proces er skabt til iværksættere med fart på."
     },
     "faq": {
       "label": "Ofte stillede spørgsmål",
@@ -46,6 +51,7 @@
     },
     "testimonials": {
       "title": "Vi har hjulpet tusindvis af kunder",
+      "verified": "Verificeret kunde",
       "quote1": "Det har fungeret rigtig godt. Det er smidigt og hurtigt.",
       "author1": "Mads, Tømrermester",
       "quote2": "Takket være Mylånbank kunne vi realisere vores drømme hurtigere.",
@@ -71,15 +77,18 @@
     "products": {
       "businessLoan": {
         "title": "Erhvervslån",
-        "desc": "Et fast lån til investeringer og vækst."
+        "desc": "Et fast lån til investeringer og vækst.",
+        "readMore": "Læs mere"
       },
       "credit": {
         "title": "Kassekredit",
-        "desc": "Fleksibel adgang til kapital når du mangler det."
+        "desc": "Fleksibel adgang til kapital når du mangler det.",
+        "readMore": "Læs mere"
       },
       "factoring": {
         "title": "Factoring",
-        "desc": "Få dine penge med det samme ved at sælge dine fakturaer."
+        "desc": "Få dine penge med det samme ved at sælge dine fakturaer.",
+        "readMore": "Læs mere"
       }
     },
     "guide": {
@@ -93,12 +102,16 @@
     "title": "Vi udfordrer den traditionelle bankverden",
     "description": "Mylånbank blev grundlagt med missionen om at hjælpe iværksættere med at vokse.",
     "history": "Siden 2015 har vi hjulpet over 50.000 virksomheder i Skandinavien med at få adgang til hurtig og enkel finansiering.",
+    "historyTitle": "Vores Historie",
+    "companiesHelped": "Virksomheder hjulpet",
     "missionTitle": "Vores mission",
     "missionText": "Vi vil gøre erhvervsfinansiering enkelt, hurtigt og fair for danske virksomheder af alle størrelser.",
     "values": {
       "title": "Vores værdier",
       "transparency": "Gennemsigtighed",
+      "transparencyDesc": "Vi tror på ærlighed uden skjulte gebyrer.",
       "speed": "Hastighed",
+      "speedDesc": "Finansiering på få timer, ikke uger.",
       "simplicity": "Enkelhed"
     }
   },
@@ -108,12 +121,16 @@
     "help": {
       "title": "Stadig i tvivl?",
       "subtitle": "Vores team hjælper dig med lånemuligheder, vilkår og ansøgningsprocessen.",
+      "guide": "Vi er klar til at guide dig gennem lån, betaling og dokumentation.",
       "button": "Ring til os nu"
     },
     "form": {
       "name": "Navn",
+      "namePlaceholder": "Dit navn",
       "email": "Email",
+      "emailPlaceholder": "din@email.dk",
       "message": "Besked",
+      "messagePlaceholder": "Hvordan kan vi hjælpe?",
       "send": "Send besked"
     },
     "info": {
@@ -182,7 +199,10 @@
     "review": {
       "title": "Gennemse din ansøgning",
       "amount": "Ønsket beløb",
+      "loanType": "Lånetype",
       "confirm": "Indsend ansøgning",
+      "sending": "Sender...",
+      "backToHome": "Gå til forsiden",
       "success": "Tak for din ansøgning! Vi vender tilbage inden for en time."
     },
     "navigation": {
@@ -197,8 +217,15 @@
     "contact": "Kontakt",
     "footerDesc": "Din pålidelige partner til finansielle løsninger i Danmark. Vi støtter iværksættere i at bygge fremtiden.",
     "products": "Produkter",
+    "businessLoan": "Erhvervslån",
+    "credit": "Kassekredit",
+    "factoring": "Factoring",
     "company": "Virksomhed",
+    "careers": "Karriere",
     "support": "Support",
+    "faq": "FAQ",
+    "terms": "Vilkår & Betingelser",
+    "privacy": "Privatlivspolitik",
     "registered": "Mylånbank er registreret hos Finanstilsynet.",
     "rights": "Alle rettigheder forbeholdes."
   }

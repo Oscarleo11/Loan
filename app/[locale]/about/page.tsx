@@ -36,12 +36,12 @@ export default function AboutPage() {
                 />
               </div>
               <div className="absolute -bottom-6 -right-4 lg:-bottom-10 lg:-right-10 bg-white p-6 lg:p-10 rounded-2xl lg:rounded-3xl shadow-xl border border-gray-50">
-                <p className="text-2xl lg:text-4xl font-black text-green-600 mb-2">50,000+</p>
-                <p className="text-gray-500 font-bold uppercase tracking-wider text-[10px] lg:text-xs">Virksomheder hjulpet</p>
+                <p className="text-2xl lg:text-4xl font-black text-green-600 mb-2">50.000+</p>
+                <p className="text-gray-500 font-bold uppercase tracking-wider text-[10px] lg:text-xs">{t('companiesHelped')}</p>
               </div>
             </div>
             <div>
-              <h2 className="text-3xl lg:text-4xl font-black mb-8 lg:mb-10 text-gray-900 text-center lg:text-left">Vores Historie</h2>
+              <h2 className="text-3xl lg:text-4xl font-black mb-8 lg:mb-10 text-gray-900 text-center lg:text-left">{t('historyTitle')}</h2>
               <p className="text-lg lg:text-xl text-gray-500 leading-relaxed mb-10 lg:mb-12 text-center lg:text-left">
                 {t('history')}
               </p>
@@ -52,7 +52,7 @@ export default function AboutPage() {
                   </div>
                   <div>
                     <h3 className="text-xl font-black mb-2">{t('values.transparency')}</h3>
-                    <p className="text-gray-500 leading-relaxed">Vi tror på ærlighed uden skjulte gebyrer.</p>
+                    <p className="text-gray-500 leading-relaxed">{t('values.transparencyDesc')}</p>
                   </div>
                 </div>
                 <div className="flex gap-6 items-start">
@@ -61,7 +61,7 @@ export default function AboutPage() {
                   </div>
                   <div>
                     <h3 className="text-xl font-black mb-2">{t('values.speed')}</h3>
-                    <p className="text-gray-500 leading-relaxed">Finansiering på få timer, ikke uger.</p>
+                    <p className="text-gray-500 leading-relaxed">{t('values.speedDesc')}</p>
                   </div>
                 </div>
               </div>

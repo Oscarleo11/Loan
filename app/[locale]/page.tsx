@@ -64,7 +64,7 @@ export default function HomePage() {
                 </div>
                 <div className="text-sm">
                   <div className="flex text-yellow-400 mb-1 font-bold">★★★★★</div>
-                  <div className="font-bold text-gray-900 uppercase tracking-tighter text-xs">Over 50.000 glade kunder</div>
+                  <div className="font-bold text-gray-900 uppercase tracking-tighter text-xs">{t('hero.happyCustomers')}</div>
                 </div>
               </div>
             </div>
@@ -144,7 +144,7 @@ export default function HomePage() {
               </div>
               <h3 className="text-2xl font-black text-gray-900 mb-6">{t('benefits.item1')}</h3>
               <p className="text-gray-500 leading-relaxed text-lg">
-                Få svar med det samme og pengene udbetalt til din virksomhedskonto inden for 24 timer.
+                {t('benefits.desc1')}
               </p>
             </div>
             <div className="bg-white p-12 rounded-[3rem] shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100 group">
@@ -153,7 +153,7 @@ export default function HomePage() {
               </div>
               <h3 className="text-2xl font-black text-gray-900 mb-6">{t('benefits.item2')}</h3>
               <p className="text-gray-500 leading-relaxed text-lg">
-                Gennemsigtige vilkår. Ingen renter, ingen skjulte gebyrer – kun et fast månedsgebyr.
+                {t('benefits.desc2')}
               </p>
             </div>
             <div className="bg-white p-12 rounded-[3rem] shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100 group">
@@ -162,7 +162,7 @@ export default function HomePage() {
               </div>
               <h3 className="text-2xl font-black text-gray-900 mb-6">{t('benefits.item3')}</h3>
               <p className="text-gray-500 leading-relaxed text-lg">
-                Betal lånet tilbage når du vil uden ekstra omkostninger. Du betaler kun for den tid, du bruger.
+                {t('benefits.desc3')}
               </p>
             </div>
           </div>
@@ -183,7 +183,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-xl lg:text-2xl font-black text-gray-900 mb-4 lg:mb-6">{t(`process.step${i}` as any)}</h3>
                 <p className="text-gray-500 text-base lg:text-lg leading-relaxed max-w-xs">
-                  Vores digitale proces er skabt til iværksættere med fart på.
+                  {t('process.desc')}
                 </p>
               </div>
             ))}

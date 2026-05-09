@@ -15,7 +15,7 @@ export default function LanguageSwitcher() {
 
   const languages = [
     { code: 'da', label: 'Dansk', flag: '🇩🇰' },
-    // { code: 'en', label: 'English', flag: '🇬🇧' }
+    { code: 'en', label: 'English', flag: '🇬🇧' }
   ];
 
   const currentLanguage = languages.find(lang => lang.code === locale) || languages[0];
@@ -52,6 +52,7 @@ export default function LanguageSwitcher() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
+            key="language-dropdown"
             initial={{ opacity: 0, y: 10, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 10, scale: 0.95 }}
