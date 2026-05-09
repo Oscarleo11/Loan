@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, Suspense } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import { useSearchParams } from 'next/navigation';
 import Navbar from '@/components/Navbar';
@@ -8,7 +8,7 @@ import Footer from '@/components/Footer';
 import { CheckCircle2, ArrowRight, ArrowLeft, Building2, User, FileText, Briefcase } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-export default function ApplyPage() {
+function ApplyForm() {
   const t = useTranslations('ApplyPage');
   const locale = useLocale();
   const searchParams = useSearchParams();
@@ -432,5 +432,13 @@ export default function ApplyPage() {
 
       <Footer />
     </div>
+  );
+}
+
+export default function ApplyPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading...</div>}>
+      <ApplyForm />
+    </Suspense>
   );
 }
