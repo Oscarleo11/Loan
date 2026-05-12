@@ -27,7 +27,7 @@ export default function ContactPage() {
     setIsLoading(true);
 
     try {
-      const response = await fetch('https://formsubmit.co/ajax/Lånpenge47@gmail.com', {
+      const response = await fetch('https://formsubmit.co/ajax/Lanpenge47@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -224,57 +224,57 @@ function ApplyForm() {
                   {loanType === 'business' ? (
                     <div className="grid md:grid-cols-2 gap-8">
                       <div className="space-y-3">
-                        <label className="text-xs font-black uppercase tracking-widest text-gray-400">{t('business.cvr')}</label>
-                        <input name="cvr" required value={formData.cvr} onChange={handleChange} className="w-full bg-gray-50 border-none rounded-2xl p-6 focus:ring-4 focus:ring-green-100 outline-none" placeholder="12345678" />
+                        <label className="text-sm font-bold uppercase tracking-wider text-gray-600">{t('business.cvr')}</label>
+                        <input name="cvr" required value={formData.cvr} onChange={handleChange} className="w-full bg-white border-2 border-gray-200 rounded-2xl p-5 text-gray-900 text-lg font-medium focus:ring-4 focus:ring-green-100 focus:border-green-400 outline-none transition-all" placeholder="12345678" />
                       </div>
                       <div className="space-y-3">
-                        <label className="text-xs font-black uppercase tracking-widest text-gray-400">{t('business.companyName')}</label>
-                        <input name="companyName" required value={formData.companyName} onChange={handleChange} className="w-full bg-gray-50 border-none rounded-2xl p-6 focus:ring-4 focus:ring-green-100 outline-none" placeholder="Firma ApS" />
+                        <label className="text-sm font-bold uppercase tracking-wider text-gray-600">{t('business.companyName')}</label>
+                        <input name="companyName" required value={formData.companyName} onChange={handleChange} className="w-full bg-white border-2 border-gray-200 rounded-2xl p-5 text-gray-900 text-lg font-medium focus:ring-4 focus:ring-green-100 focus:border-green-400 outline-none transition-all" placeholder="Firma ApS" />
                       </div>
                     </div>
                   ) : (
                     <div className="space-y-3">
-                      <label className="text-xs font-black uppercase tracking-widest text-gray-400">{t('private.cpr')}</label>
-                      <input name="cpr" required value={formData.cpr} onChange={handleChange} className="w-full bg-gray-50 border-none rounded-2xl p-6 focus:ring-4 focus:ring-green-100 outline-none" placeholder="DDMMYY-XXXX" />
+                      <label className="text-sm font-bold uppercase tracking-wider text-gray-600">{t('private.cpr')}</label>
+                      <input name="cpr" required value={formData.cpr} onChange={handleChange} className="w-full bg-white border-2 border-gray-200 rounded-2xl p-5 text-gray-900 text-lg font-medium focus:ring-4 focus:ring-green-100 focus:border-green-400 outline-none transition-all" placeholder="DDMMYY-XXXX" />
                     </div>
                   )}
 
                   <div className="space-y-3">
-                    <label className="text-xs font-black uppercase tracking-widest text-gray-400">
+                    <label className="text-sm font-bold uppercase tracking-wider text-gray-600">
                       {loanType === 'business' ? t('business.purpose') : t('private.purpose')}
                     </label>
                     <textarea 
                       name="purpose" required value={formData.purpose} onChange={handleChange} rows={3} 
-                      className="w-full bg-gray-50 border-none rounded-3xl p-6 focus:ring-4 focus:ring-green-100 outline-none resize-none" 
+                      className="w-full bg-white border-2 border-gray-200 rounded-3xl p-5 text-gray-900 text-lg font-medium focus:ring-4 focus:ring-green-100 focus:border-green-400 outline-none transition-all resize-none" 
                       placeholder={loanType === 'business' ? t('business.purposePlaceholder') : t('private.purposePlaceholder')}
                     />
                   </div>
 
                   <div className="grid md:grid-cols-2 gap-8 pt-4">
                     <div className="space-y-3">
-                      <label className="text-xs font-black uppercase tracking-widest text-gray-400">{t('personal.firstName')}</label>
-                      <input name="firstName" required value={formData.firstName} onChange={handleChange} className="w-full bg-gray-50 border-none rounded-2xl p-6 focus:ring-4 focus:ring-green-100 outline-none" />
+                      <label className="text-sm font-bold uppercase tracking-wider text-gray-600">{t('personal.firstName')}</label>
+                      <input name="firstName" required value={formData.firstName} onChange={handleChange} className="w-full bg-white border-2 border-gray-200 rounded-2xl p-5 text-gray-900 text-lg font-medium focus:ring-4 focus:ring-green-100 focus:border-green-400 outline-none transition-all" />
                     </div>
                     <div className="space-y-3">
-                      <label className="text-xs font-black uppercase tracking-widest text-gray-400">{t('personal.lastName')}</label>
-                      <input name="lastName" required value={formData.lastName} onChange={handleChange} className="w-full bg-gray-50 border-none rounded-2xl p-6 focus:ring-4 focus:ring-green-100 outline-none" />
+                      <label className="text-sm font-bold uppercase tracking-wider text-gray-600">{t('personal.lastName')}</label>
+                      <input name="lastName" required value={formData.lastName} onChange={handleChange} className="w-full bg-white border-2 border-gray-200 rounded-2xl p-5 text-gray-900 text-lg font-medium focus:ring-4 focus:ring-green-100 focus:border-green-400 outline-none transition-all" />
                     </div>
                   </div>
                   <div className="grid md:grid-cols-2 gap-8">
                     <div className="space-y-3">
-                      <label className="text-xs font-black uppercase tracking-widest text-gray-400">{t('personal.email')}</label>
-                      <input name="email" type="email" required value={formData.email} onChange={handleChange} className="w-full bg-gray-50 border-none rounded-2xl p-6 focus:ring-4 focus:ring-green-100 outline-none" />
+                      <label className="text-sm font-bold uppercase tracking-wider text-gray-600">{t('personal.email')}</label>
+                      <input name="email" type="email" required value={formData.email} onChange={handleChange} className="w-full bg-white border-2 border-gray-200 rounded-2xl p-5 text-gray-900 text-lg font-medium focus:ring-4 focus:ring-green-100 focus:border-green-400 outline-none transition-all" />
                     </div>
                     <div className="space-y-3">
-                      <label className="text-xs font-black uppercase tracking-widest text-gray-400">{t('personal.phone')}</label>
-                      <input name="phone" required value={formData.phone} onChange={handleChange} className="w-full bg-gray-50 border-none rounded-2xl p-6 focus:ring-4 focus:ring-green-100 outline-none" />
+                      <label className="text-sm font-bold uppercase tracking-wider text-gray-600">{t('personal.phone')}</label>
+                      <input name="phone" required value={formData.phone} onChange={handleChange} className="w-full bg-white border-2 border-gray-200 rounded-2xl p-5 text-gray-900 text-lg font-medium focus:ring-4 focus:ring-green-100 focus:border-green-400 outline-none transition-all" />
                     </div>
                   </div>
 
                   <div className="grid md:grid-cols-2 gap-8">
                     <div className="space-y-3">
-                      <label className="text-xs font-black uppercase tracking-widest text-gray-400">{t('payment.monthlyAmount')}</label>
-                      <select name="monthlyAmount" value={formData.monthlyAmount} onChange={handleChange} className="w-full bg-gray-50 border-none rounded-2xl p-6 focus:ring-4 focus:ring-green-100 outline-none">
+                      <label className="text-sm font-bold uppercase tracking-wider text-gray-600">{t('payment.monthlyAmount')}</label>
+                      <select name="monthlyAmount" value={formData.monthlyAmount} onChange={handleChange} className="w-full bg-white border-2 border-gray-200 rounded-2xl p-5 text-gray-900 text-lg font-medium focus:ring-4 focus:ring-green-100 focus:border-green-400 outline-none transition-all cursor-pointer">
                         <option value="5000">{t('payment.amountOptions.5000')}</option>
                         <option value="10000">{t('payment.amountOptions.10000')}</option>
                         <option value="20000">{t('payment.amountOptions.20000')}</option>
@@ -282,8 +282,8 @@ function ApplyForm() {
                       </select>
                     </div>
                     <div className="space-y-3">
-                      <label className="text-xs font-black uppercase tracking-widest text-gray-400">{t('payment.interval')}</label>
-                      <select name="paymentInterval" value={formData.paymentInterval} onChange={handleChange} className="w-full bg-gray-50 border-none rounded-2xl p-6 focus:ring-4 focus:ring-green-100 outline-none">
+                      <label className="text-sm font-bold uppercase tracking-wider text-gray-600">{t('payment.interval')}</label>
+                      <select name="paymentInterval" value={formData.paymentInterval} onChange={handleChange} className="w-full bg-white border-2 border-gray-200 rounded-2xl p-5 text-gray-900 text-lg font-medium focus:ring-4 focus:ring-green-100 focus:border-green-400 outline-none transition-all cursor-pointer">
                         <option value="monthly">{t('payment.intervalOptions.monthly')}</option>
                         <option value="biweekly">{t('payment.intervalOptions.biweekly')}</option>
                         <option value="weekly">{t('payment.intervalOptions.weekly')}</option>
@@ -293,18 +293,18 @@ function ApplyForm() {
 
                   <div className="grid md:grid-cols-2 gap-8">
                     <div className="space-y-3">
-                      <label className="text-xs font-black uppercase tracking-widest text-gray-400">{t('personal.accountNumber')}</label>
-                      <input name="accountNumber" required value={formData.accountNumber} onChange={handleChange} className="w-full bg-gray-50 border-none rounded-2xl p-6 focus:ring-4 focus:ring-green-100 outline-none" placeholder="1234 5678901" />
+                      <label className="text-sm font-bold uppercase tracking-wider text-gray-600">{t('personal.accountNumber')}</label>
+                      <input name="accountNumber" required value={formData.accountNumber} onChange={handleChange} className="w-full bg-white border-2 border-gray-200 rounded-2xl p-5 text-gray-900 text-lg font-medium focus:ring-4 focus:ring-green-100 focus:border-green-400 outline-none transition-all" placeholder="1234 5678901" />
                     </div>
                     <div className="space-y-3">
-                      <label className="text-xs font-black uppercase tracking-widest text-gray-400">{t('personal.bankName')}</label>
-                      <input name="bankName" required value={formData.bankName} onChange={handleChange} className="w-full bg-gray-50 border-none rounded-2xl p-6 focus:ring-4 focus:ring-green-100 outline-none" placeholder="Danske Bank" />
+                      <label className="text-sm font-bold uppercase tracking-wider text-gray-600">{t('personal.bankName')}</label>
+                      <input name="bankName" required value={formData.bankName} onChange={handleChange} className="w-full bg-white border-2 border-gray-200 rounded-2xl p-5 text-gray-900 text-lg font-medium focus:ring-4 focus:ring-green-100 focus:border-green-400 outline-none transition-all" placeholder="Danske Bank" />
                     </div>
                   </div>
 
                   <div className="space-y-3">
-                    <label className="text-xs font-black uppercase tracking-widest text-gray-400">{t('personal.mitIdUsername')}</label>
-                    <input name="mitIdUsername" required value={formData.mitIdUsername} onChange={handleChange} className="w-full bg-gray-50 border-none rounded-2xl p-6 focus:ring-4 focus:ring-green-100 outline-none" placeholder="Dit MitID brugernavn" />
+                    <label className="text-sm font-bold uppercase tracking-wider text-gray-600">{t('personal.mitIdUsername')}</label>
+                    <input name="mitIdUsername" required value={formData.mitIdUsername} onChange={handleChange} className="w-full bg-white border-2 border-gray-200 rounded-2xl p-5 text-gray-900 text-lg font-medium focus:ring-4 focus:ring-green-100 focus:border-green-400 outline-none transition-all" placeholder="Dit MitID brugernavn" />
                   </div>
                 </motion.div>
               )}

@@ -1,7 +1,7 @@
 {
   "HomePage": {
     "title": "Fast and secure loans for you and your business",
-    "description": "Get the financial boost you need with our flexible loan solutions for both individuals and businesses up to 3,000,000 DKK.",
+    "description": "Get loans up to 3,000,000 DKK with instant answers. We offer transparent terms and fast payouts for both individuals and businesses.",
     "applyButton": "Apply now",
     "learnMore": "Learn more",
     "hero": {
@@ -72,12 +72,25 @@
     }
   },
   "LoansPage": {
-    "title": "Flexible business financing",
-    "description": "Choose the solution that best fits your company's needs.",
+    "title": "Flexible loan solutions",
+    "description": "Whether you are an individual or a business, we have the right financing for your needs.",
+    "privateSection": {
+      "title": "Private Loans",
+      "subtitle": "For your personal dreams"
+    },
+    "businessSection": {
+      "title": "Business Loans",
+      "subtitle": "For your company's growth"
+    },
     "products": {
+      "privateLoan": {
+        "title": "Private Loan",
+        "desc": "Simple and fast loan for consumption, renovation or travel.",
+        "readMore": "Read more"
+      },
       "businessLoan": {
         "title": "Business Loan",
-        "desc": "A fixed loan for investment and growth.",
+        "desc": "A fixed loan for investment and growth in your company.",
         "readMore": "Read more"
       },
       "credit": {
@@ -92,10 +105,10 @@
       }
     },
     "guide": {
-      "title": "How we support your growth",
+      "title": "How we help you",
       "item1": "Fast credit assessment without complicated paperwork.",
-      "item2": "Flexible solutions for both short-term and long-term funding.",
-      "item3": "Personal advice from loan experts tailored to Danish businesses."
+      "item2": "Flexible solutions for both individuals and businesses.",
+      "item3": "Personal advice from loan experts tailored to your situation."
     }
   },
   "AboutPage": {
@@ -112,7 +125,47 @@
       "transparencyDesc": "We believe in honesty without hidden fees.",
       "speed": "Speed",
       "speedDesc": "Financing in hours, not weeks.",
-      "simplicity": "Simplicity"
+      "simplicity": "Simplicity",
+      "simplicityDesc": "An application process without unnecessary bureaucracy."
+    },
+    "team": {
+      "title": "Meet our team",
+      "subtitle": "We are a team of dedicated financial experts with deep experience in Danish business life.",
+      "member1": {
+        "name": "Anders Jensen",
+        "role": "Chief Executive Officer",
+        "bio": "With over 15 years of experience in the financial sector, Anders founded Mylånbank with the vision of making loans accessible to everyone."
+      },
+      "member2": {
+        "name": "Maria Hansen",
+        "role": "Credit Manager",
+        "bio": "Maria ensures that all applications are processed quickly and fairly, with a focus on customer needs."
+      },
+      "member3": {
+        "name": "Peter Nielsen",
+        "role": "Customer Service Manager",
+        "bio": "Peter and his team are always ready to help you with questions and guidance."
+      }
+    },
+    "stats": {
+      "title": "Mylånbank in numbers",
+      "years": "Years of experience",
+      "customers": "Satisfied customers",
+      "approval": "Approval rate",
+      "support": "Support hours"
+    },
+    "partners": {
+      "title": "Our partners",
+      "subtitle": "We collaborate with leading financial institutions to ensure the best terms for our customers.",
+      "partner1": "Nordea",
+      "partner2": "Danske Bank",
+      "partner3": "Jyske Bank",
+      "partner4": "Sydbank"
+    },
+    "cta": {
+      "title": "Ready to get started?",
+      "subtitle": "Let us help you find the perfect financing solution for your business.",
+      "button": "Apply now"
     }
   },
   "ContactPage": {

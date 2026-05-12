@@ -1,7 +1,7 @@
 {
   "HomePage": {
     "title": "Hurtige og sikre lån til dig og din virksomhed",
-    "description": "Få det økonomiske skub, du har brug for, med vores fleksible låneløsninger til både private og erhverv op til 3.000.000 kr.",
+    "description": "Få lån op til 3.000.000 kr. med svar med det samme. Vi tilbyder gennemsigtige vilkår og hurtig udbetaling til både private og virksomheder.",
     "applyButton": "Ansøg nu",
     "learnMore": "Læs mere",
     "hero": {
@@ -72,12 +72,25 @@
     }
   },
   "LoansPage": {
-    "title": "Fleksibel erhvervsfinansiering",
-    "description": "Vælg den løsning der passer bedst til din virksomheds behov.",
+    "title": "Fleksible låneløsninger",
+    "description": "Uanset om du er privatperson eller virksomhed, har vi den rette finansiering til dine behov.",
+    "privateSection": {
+      "title": "Privatlån",
+      "subtitle": "Til dine personlige drømme"
+    },
+    "businessSection": {
+      "title": "Erhvervslån",
+      "subtitle": "Til din virksomheds vækst"
+    },
     "products": {
+      "privateLoan": {
+        "title": "Privatlån",
+        "desc": "Enkelt og hurtigt lån til forbrug, renovering eller rejser.",
+        "readMore": "Læs mere"
+      },
       "businessLoan": {
         "title": "Erhvervslån",
-        "desc": "Et fast lån til investeringer og vækst.",
+        "desc": "Et fast lån til investeringer og vækst i din virksomhed.",
         "readMore": "Læs mere"
       },
       "credit": {
@@ -92,10 +105,10 @@
       }
     },
     "guide": {
-      "title": "Sådan hjælper vi din virksomhed",
+      "title": "Sådan hjælper vi dig",
       "item1": "Hurtig kreditvurdering uden komplicerede papirbunker.",
-      "item2": "Fleksible løsninger til både kortsigtet og langsigtet finansiering.",
-      "item3": "Personlig rådgivning fra lånexperter tilpasset dansk erhvervsliv."
+      "item2": "Fleksible løsninger til både private og erhvervslivet.",
+      "item3": "Personlig rådgivning fra lånexperter tilpasset din situation."
     }
   },
   "AboutPage": {
@@ -112,7 +125,47 @@
       "transparencyDesc": "Vi tror på ærlighed uden skjulte gebyrer.",
       "speed": "Hastighed",
       "speedDesc": "Finansiering på få timer, ikke uger.",
-      "simplicity": "Enkelhed"
+      "simplicity": "Enkelhed",
+      "simplicityDesc": "En ansøgningsproces uden unødvendig bureaukrati."
+    },
+    "team": {
+      "title": "Mød vores team",
+      "subtitle": "Vi er et team af dedikerede finansielle eksperter med dyb erfaring inden for dansk erhvervsliv.",
+      "member1": {
+        "name": "Anders Jensen",
+        "role": "Administrerende direktør",
+        "bio": "Med over 15 års erfaring i finanssektoren grundlagde Anders Mylånbank med visionen om at gøre lån tilgængelige for alle."
+      },
+      "member2": {
+        "name": "Maria Hansen",
+        "role": "Kreditchef",
+        "bio": "Maria sikrer at alle ansøgninger behandles hurtigt og fair, med fokus på kundens behov."
+      },
+      "member3": {
+        "name": "Peter Nielsen",
+        "role": "Kundeservicechef",
+        "bio": "Peter og hans team er altid klar til at hjælpe dig med spørgsmål og vejledning."
+      }
+    },
+    "stats": {
+      "title": "Mylånbank i tal",
+      "years": "Års erfaring",
+      "customers": "Tilfredse kunder",
+      "approval": "Godkendelsesrate",
+      "support": "Timer Support"
+    },
+    "partners": {
+      "title": "Vores partnere",
+      "subtitle": "Vi samarbejder med førende finansielle institutioner for at sikre de bedste vilkår for vores kunder.",
+      "partner1": "Nordea",
+      "partner2": "Danske Bank",
+      "partner3": "Jyske Bank",
+      "partner4": " Sydbank"
+    },
+    "cta": {
+      "title": "Klar til at komme i gang?",
+      "subtitle": "Lad os hjælpe dig med at finde den perfekte finansieringsløsning til din virksomhed.",
+      "button": "Ansøg nu"
     }
   },
   "ContactPage": {
@@ -212,7 +265,7 @@
   },
   "Navigation": {
     "home": "Hjem",
-    "loans": "Erhvervslån",
+    "loans": "Vores lån",
     "about": "Om os",
     "contact": "Kontakt",
     "footerDesc": "Din pålidelige partner til finansielle løsninger i Danmark. Vi støtter iværksættere i at bygge fremtiden.",
