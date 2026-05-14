@@ -8,14 +8,14 @@ import Footer from '@/components/Footer';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
 import StatsSection from '@/components/StatsSection';
 import {Zap, Shield, Unlock, ArrowRight} from 'lucide-react';
-import {motion} from 'framer-motion';
+import {motion, Variants} from 'framer-motion';
 
-const fadeInUp = {
+const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }
 };
 
-const staggerContainer = {
+const staggerContainer: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -23,7 +23,7 @@ const staggerContainer = {
   }
 };
 
-const scaleIn = {
+const scaleIn: Variants = {
   hidden: { opacity: 0, scale: 0.8 },
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: 'easeOut' } }
 };
