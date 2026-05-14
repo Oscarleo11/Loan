@@ -29,27 +29,27 @@ export default function TestimonialCarousel() {
     {
       quote: t('testimonials.quote1'), 
       author: t('testimonials.author1'), 
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150"
+      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=150"
     },
     {
       quote: t('testimonials.quote2'), 
       author: t('testimonials.author2'), 
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150"
+      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=150"
     },
     {
       quote: t('testimonials.quote3'), 
       author: t('testimonials.author3'), 
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150"
+      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=150"
     },
     {
       quote: t('testimonials.quote4'), 
       author: t('testimonials.author4'), 
-      image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&q=80&w=150"
+      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150"
     },
     {
       quote: t('testimonials.quote5'), 
       author: t('testimonials.author5'), 
-      image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&q=80&w=150"
+      image: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&q=80&w=150"
     },
   ];
 

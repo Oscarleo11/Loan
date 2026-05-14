@@ -27,9 +27,9 @@ export default function AboutPage() {
   const router = useRouter();
   
   const teamMembers = [
-    { name: t('team.member1.name'), role: t('team.member1.role'), bio: t('team.member1.bio'), image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400" },
-    { name: t('team.member2.name'), role: t('team.member2.role'), bio: t('team.member2.bio'), image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400" },
-    { name: t('team.member3.name'), role: t('team.member3.role'), bio: t('team.member3.bio'), image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400" }
+    { name: t('team.member1.name'), role: t('team.member1.role'), bio: t('team.member1.bio'), image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400" },
+    { name: t('team.member2.name'), role: t('team.member2.role'), bio: t('team.member2.bio'), image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400" },
+    { name: t('team.member3.name'), role: t('team.member3.role'), bio: t('team.member3.bio'), image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=400" }
   ];
 
   const stats = [

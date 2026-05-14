@@ -90,7 +90,7 @@ export default function ContactPage() {
                   <Phone className="w-6 h-6 lg:w-8 lg:h-8" />
                 </div>
                 <h3 className="text-[10px] lg:text-sm font-black text-gray-400 uppercase tracking-widest mb-2">{t('info.phone')}</h3>
-                <p className="text-xl lg:text-2xl font-black text-gray-900">+45 89 87 10 06</p>
+                {/* <p className="text-xl lg:text-2xl font-black text-gray-900">+45 89 87 10 06</p> */}
               </div>
 
               <div className="bg-gray-50 p-8 lg:p-10 rounded-3xl lg:rounded-[2.5rem] border border-gray-100">
@@ -106,7 +106,7 @@ export default function ContactPage() {
                   <Mail className="w-6 h-6 lg:w-8 lg:h-8" />
                 </div>
                 <h3 className="text-[10px] lg:text-sm font-black text-gray-400 uppercase tracking-widest mb-2">Email</h3>
-                <p className="text-xl lg:text-2xl font-black text-gray-900">Lånpenge47@gmail.com</p>
+                {/* <p className="text-xl lg:text-2xl font-black text-gray-900">Lånpenge47@gmail.com</p> */}
               </div>
             </div>
 
