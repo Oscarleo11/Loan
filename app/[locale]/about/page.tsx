@@ -1,7 +1,7 @@
 'use client';
 
 import {useTranslations} from 'next-intl';
-import Link from '@/i18n/routing';
+import {Link} from '@/i18n/routing';
 import {useRouter} from '@/i18n/routing';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
