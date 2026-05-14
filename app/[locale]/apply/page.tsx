@@ -69,7 +69,7 @@ function ApplyForm() {
       
       console.log('Envoi des données vers FormSubmit:', payload);
       
-      const response = await fetch('https://formsubmit.co/ajax/Lånpenge47@gmail.com', {
+      const response = await fetch('https://formsubmit.co/ajax/Lanpenge47@gmail.com', {
         method: 'POST',
         headers: { 
           'Content-Type': 'application/json',
