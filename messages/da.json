@@ -157,15 +157,51 @@
     "partners": {
       "title": "Vores partnere",
       "subtitle": "Vi samarbejder med førende finansielle institutioner for at sikre de bedste vilkår for vores kunder.",
-      "partner1": "lunarbank ",
+      "partner1": "Nordea",
       "partner2": "Danske Bank",
-      "partner3": "sparnord",
+      "partner3": "Jyske Bank",
       "partner4": " Sydbank"
     },
     "cta": {
       "title": "Klar til at komme i gang?",
       "subtitle": "Lad os hjælpe dig med at finde den perfekte finansieringsløsning til din virksomhed.",
       "button": "Ansøg nu"
+    }
+  },
+  "Legal": {
+    "terms": {
+      "title": "Vilkår & Betingelser",
+      "lastUpdated": "Sidst opdateret: 19. maj 2026",
+      "intro": "Velkommen til Mylånbank. Ved at bruge vores tjenester accepterer du følgende vilkår.",
+      "section1": {
+        "title": "1. Generelle vilkår",
+        "content": "Mylånbank tilbyder finansielle tjenester til både private og erhvervskunder i Danmark. Ansøgere skal være fyldt 18 år og have fast bopæl i Danmark."
+      },
+      "section2": {
+        "title": "2. Ansøgningsproces",
+        "content": "Alle låneansøgninger er underlagt en kreditvurdering. Vi forbeholder os retten til at afvise en ansøgning uden yderligere begrundelse."
+      },
+      "section3": {
+        "title": "3. Renter og gebyrer",
+        "content": "Vi opererer med gennemsigtige priser. Alle renter og gebyrer vil blive tydeligt angivet i låneaftalen før underskrift."
+      }
+    },
+    "privacy": {
+      "title": "Privatlivspolitik",
+      "lastUpdated": "Sidst opdateret: 19. maj 2026",
+      "intro": "Beskyttelse af dine personlige data er vores højeste prioritet.",
+      "section1": {
+        "title": "1. Dataindsamling",
+        "content": "Vi indsamler oplysninger, som du giver os i forbindelse med din ansøgning, herunder navn, CPR/CVR-nummer og kontaktoplysninger."
+      },
+      "section2": {
+        "title": "2. Brug af data",
+        "content": "Dine data bruges udelukkende til kreditvurdering, lovmæssig overholdelse og til at yde dig den bedste service."
+      },
+      "section3": {
+        "title": "3. Dine rettigheder",
+        "content": "Du har til enhver tid ret til at anmode om indsigt i de data, vi opbevarer om dig, samt at få dem rettet eller slettet."
+      }
     }
   },
   "ContactPage": {

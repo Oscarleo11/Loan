@@ -157,15 +157,51 @@
     "partners": {
       "title": "Our partners",
       "subtitle": "We collaborate with leading financial institutions to ensure the best terms for our customers.",
-      "partner1": "lunarbank ",
+      "partner1": "Nordea",
       "partner2": "Danske Bank",
-      "partner3": "sparnord",
+      "partner3": "Jyske Bank",
       "partner4": "Sydbank"
     },
     "cta": {
       "title": "Ready to get started?",
       "subtitle": "Let us help you find the perfect financing solution for your business.",
       "button": "Apply now"
+    }
+  },
+  "Legal": {
+    "terms": {
+      "title": "Terms & Conditions",
+      "lastUpdated": "Last updated: May 19, 2026",
+      "intro": "Welcome to Mylånbank. By using our services, you agree to the following terms.",
+      "section1": {
+        "title": "1. General Terms",
+        "content": "Mylånbank offers financial services to both individuals and business customers in Denmark. Applicants must be at least 18 years old and have a permanent residence in Denmark."
+      },
+      "section2": {
+        "title": "2. Application Process",
+        "content": "All loan applications are subject to a credit assessment. We reserve the right to reject an application without further justification."
+      },
+      "section3": {
+        "title": "3. Interest and Fees",
+        "content": "We operate with transparent pricing. All interest and fees will be clearly stated in the loan agreement before signing."
+      }
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "lastUpdated": "Last updated: May 19, 2026",
+      "intro": "Protecting your personal data is our highest priority.",
+      "section1": {
+        "title": "1. Data Collection",
+        "content": "We collect information that you provide to us in connection with your application, including name, CPR/CVR number, and contact details."
+      },
+      "section2": {
+        "title": "2. Use of Data",
+        "content": "Your data is used exclusively for credit assessment, legal compliance, and to provide you with the best service."
+      },
+      "section3": {
+        "title": "3. Your Rights",
+        "content": "You have the right at any time to request access to the data we store about you, as well as to have it corrected or deleted."
+      }
     }
   },
   "ContactPage": {

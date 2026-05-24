@@ -43,8 +43,8 @@ export default function Footer() {
             <h4 className="font-black text-lg mb-8 uppercase tracking-wider text-gray-500">{t('support')}</h4>
             <ul className="space-y-4 text-gray-400 font-medium">
               <li className="hover:text-green-400 transition cursor-pointer">{t('faq')}</li>
-              <li className="hover:text-green-400 transition cursor-pointer">{t('terms')}</li>
-              <li className="hover:text-green-400 transition cursor-pointer">{t('privacy')}</li>
+              <li><Link href="/terms" className="hover:text-green-400 transition">{t('terms')}</Link></li>
+              <li><Link href="/privacy" className="hover:text-green-400 transition">{t('privacy')}</Link></li>
             </ul>
           </div>
         </div>
